@@ -1,0 +1,32 @@
+
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @friend.first_name %>
+    <%= @friend.last_name %>
+
+  </h1>
+    <p class="lead">This space is provider for Friend to enter information about themselves. Somewhat of a small and upbeat bio.</p>
+
+      <%= @friend.email %> |
+      <%= @friend.phone %> |
+      <%= @friend.twitter %>
+
+      <hr class="my-4">
+</div>
+
+<br />
+
+<%= link_to 'Edit', edit_friend_path(@friend), class:'btn btn-secondary' %> 
+<%= link_to 'Back', friend_path, class:'btn btn-primary' %>
+
+
+
+<!-- <br />
+<br />
+<br />
+<hr />
+<br /> -->
+
+
+
+
